@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . /app
 
-ENV MYSQL_HOST=localhost
+ENV MYSQL_HOST=webpim.onrender.com
 ENV MYSQL_USERNAME=root
 ENV MYSQL_DATABASE=lovepotion_db
 
