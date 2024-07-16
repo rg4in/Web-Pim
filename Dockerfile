@@ -11,7 +11,7 @@ COPY . /app
 RUN docker-php-ext-install mysqli
 
 # Set environment variables for MySQL connection
-ENV MYSQL_HOST=mysql
+ENV MYSQL_HOST=localhost
 ENV MYSQL_USERNAME=root
 ENV MYSQL_DATABASE=lovepotion_db
 
