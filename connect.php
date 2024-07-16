@@ -1,15 +1,13 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = ""; // ใส่รหัสผ่านของคุณ
-$dbname = "lovepotion_db";
+$servername = getenv('MYSQL_HOST');
+$username = getenv('MYSQL_USERNAME');
+$dbname = getenv('MYSQL_DATABASE');
 
-// สร้างการเชื่อมต่อ
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Create connection
+$conn = new mysqli($servername, $username, '', $dbname); // ลบ $password ออก
 
-// ตรวจสอบการเชื่อมต่อ
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
 ?>
