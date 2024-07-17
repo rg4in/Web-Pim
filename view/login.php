@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             showConfirmButton: false,
                             timer: 2000
                         }).then(function() {
-                            window.location.href = '" . ($role === 'manager' ? 'manage_store.php' : 'index.php') . "';
+                            window.location.href = '" . ($role === 'manager' ? 'index.php' : 'index.php') . "';
                         });
                     }, 100);
                   </script>";
